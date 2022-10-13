@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="description" content="Interactive pricing component">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+    <main class="main">
+        <div class="main__container container">
+            
+            <div class="info__container">
+                <h1 class="info__title">Simple, traffic-based pricing</h1>
+                <p class="info__subtitle">Sign-up for our 30-day trial. <span class="info__subtitle-span">No credit card required.</span></p>
+            </div>
+
+            <div class="card">
+                
+                <div class="card__body">
+                    <h2 class="card__pageviews">
+                        <span class="card__pageviews-number" id="cardPageViews">100k</span>
+                        Pageviews
+                    </h2>
+
+                    <div class="card__slider-container" id="cardSliderContainer">
+                        <input class="card__slider" type="range" name="pageviewsSelector" id="pageviewsSelector" min="0" max="4" step="1">
+                    </div>
+
+                    <p class="card__price" id="cardPrice">
+                        $16.00
+                        <span class="card__price-span">/month</span>
+                    </p>
+                   
+                    <div class="card__billing">
+                        <span class="card__billing-span">
+                            Monthly Billing
+                        </span>
+                        <input class="card__billing-checkbox" type="checkbox" name="billing" id="billing">
+                        <span class="card__billing-span">
+                            Yearly Billing
+                            <span class="card__billing-badge">
+                                <span class="card__billing-badge-minus">-</span>
+                                25% 
+                                <span class="card__billing-badge-text">discount</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card__footer">
+                    <ul class="card__benefits">
+                        <li class="card__benefit">
+                            <img class="card__benefit-img" src="assets/images/icon-check.svg" alt="">
+                            Unlimited websites
+                        </li>
+                        <li class="card__benefit">
+                            <img class="card__benefit-img" src="assets/images/icon-check.svg" alt="">
+                            100% data ownership
+                        </li>
+                        <li class="card__benefit">
+                            <img class="card__benefit-img" src="assets/images/icon-check.svg" alt="">
+                            Email reports
+                        </li>
+                    </ul>
+
+                    <button type="button" class="card__btn">Start my trial</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
