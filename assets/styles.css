@@ -42,7 +42,7 @@ body {
 
 @media (min-width: 1400px) {
     body {
-        background-position: top -149px center;
+        background-position: top center;
         background-size: 100%;
     }
 }
